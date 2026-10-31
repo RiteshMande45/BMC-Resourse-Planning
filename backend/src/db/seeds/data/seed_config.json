@@ -1,0 +1,41 @@
+{
+  "availability": {
+    "Fully Allocated":    100,
+    "Partially Available": 60,
+    "Available":           40,
+    "default":            100
+  },
+
+  "projects": [
+    { "name": "BMC Control-M",    "domain": "Workload Automation",    "client": "BMC Software" },
+    { "name": "BMC ITSM",         "domain": "IT Service Management",  "client": "BMC Software" },
+    { "name": "ElliotAI",         "domain": "Artificial Intelligence","client": "Internal"     },
+    { "name": "Elliot Corel",     "domain": "Creative Software",      "client": "Internal"     },
+    { "name": "Corel WP+Painter", "domain": "Creative Software",      "client": "Corel"        },
+    { "name": "MistPlay",         "domain": "Gaming",                 "client": "MistPlay"     },
+    { "name": "RILO",             "domain": "Other",                  "client": "RILO"         },
+    { "name": "Recru-AI",         "domain": "Recruitment AI",         "client": "Internal"     },
+    { "name": "FirstUp",          "domain": "Content Management",     "client": "FirstUp"      },
+    { "name": "Residex",          "domain": "Real Estate",            "client": "Residex"      },
+    { "name": "IT Support",       "domain": "Internal IT",            "client": "Internal"     }
+  ],
+
+  "team_to_project": {
+    "BMC Control-M":                         "BMC Control-M",
+    "BMC":                                   "BMC Control-M",
+    "Team BMC":                              "BMC Control-M",
+    "QA / Testing":                          "BMC Control-M",
+    "BMC Migration":                         "BMC Control-M",
+    "Development / QA , Testing / Support":  "BMC Control-M",
+    "BMC ITSM":                              "BMC ITSM",
+    "AI/ML":                                 "ElliotAI",
+    "DevOps":                                "ElliotAI",
+    "Development":                           "BMC Control-M",
+    "FirstUp":                               "FirstUp",
+    "MistPlay":                              "MistPlay",
+    "RILO":                                  "RILO",
+    "Recru-AI":                              "Recru-AI",
+    "Residex":                               "Residex",
+    "IT Support":                            "IT Support"
+  }
+}

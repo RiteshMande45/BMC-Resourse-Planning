@@ -1,0 +1,27 @@
+# ── Node.js ───────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# ── Environment (NEVER commit real secrets) ───────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Logs ──────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── OS ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Editor ────────────────────────────────────────────────────
+.vscode/
+.idea/
+
+# ── Python (old — safe to leave as reference) ─────────────────
+__pycache__/
+*.pyc
+venv/
+.venv/

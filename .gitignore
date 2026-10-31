@@ -1,0 +1,28 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Local databases and datasets
+*.db
+*.sqlite3
+*.csv
+*.xlsx
+
+# Frontend dependencies and build output
+node_modules/
+dist/
+build/
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+Thumbs.db
