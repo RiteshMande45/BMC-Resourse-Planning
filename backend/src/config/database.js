@@ -15,4 +15,5 @@ pool.on('error', (err) => {
   console.error('Unexpected error on idle pg client:', err.message);
 });
 
-module.exports = { pool };
+module.exports = pool;;
+
