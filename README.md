@@ -188,8 +188,72 @@ npm start
 | `JWT_SECRET` | Secret key for JWT tokens | Yes |
 | `JWT_EXPIRES_IN` | Token expiry duration | No |
 
-> 
+---
 
+## 💻 Frontend (React + Material UI)
+
+A standalone React 18 frontend dashboard suite located in `frontend/`.
+
+### Prerequisites & Tech Stack
+- React 18 + Vite (JavaScript)
+- Material UI (MUI v5) + Emotion
+- Recharts (visualizations & metrics)
+- Dayjs, Axios, React Router v6
+
+### 1️⃣ Installation & Environment
+```bash
+cd frontend
+npm install
+cp .env.example .env
+```
+
+`frontend/.env`:
+```env
+VITE_API_BASE_URL=http://localhost:8000/api
+VITE_USE_MOCK=true
+```
+
+- `VITE_USE_MOCK=true` *(default)*: Runs with comprehensive mock data simulating all 5 roles, PRD calculations, and 100% allocation rule checks.
+- `VITE_USE_MOCK=false`: Connects directly to the Express backend via Axios.
+
+### 2️⃣ Development & Testing
+```bash
+# Start local dev server (port 3000)
+npm run dev
+
+# Run Vitest test suite (calculations & business rules)
+npm test
+
+# Build production bundle
+npm run build
+```
+
+### 3️⃣ Demo Accounts (Mock Mode)
+Password for all demo accounts: **`Test@1234`**
+
+| Role | Email | Name | Default Landing |
+|---|---|---|---|
+| **Owner** | `owner@test.com` | Test Owner | `/owner` |
+| **Sales** | `sales@test.com` | Test Sales | `/sales` |
+| **Manager / TL** | `manager@test.com` | Durgadas Barhate | `/manager` |
+| **Employee** | `employee@test.com` | Test Employee | `/employee` |
+| **HR** | `hr@test.com` | Test HR | `/hr` |
+
+*(Note: Click any demo card on the login screen to auto-fill credentials.)*
+
+### 4️⃣ Endpoints to Confirm with Backend Team
+The following endpoints were proposed to support frontend feature completeness and should be aligned with backend:
+- `POST /api/auth/login` and `GET /api/me` response shape
+- `POST /api/projects/:id/documents` multipart upload
+- `GET, POST /api/certificates`, `POST /api/certificates/:id/verify`, `POST /api/certificates/:id/reject`
+- `GET /api/leaves`, `POST /api/leaves/sync`
+- `GET, POST /api/deals` (Sales opportunity pipeline)
+- `GET, POST /api/clients` (Client directory)
+- `GET /api/users`, `PATCH /api/users/:id/role`, `PATCH /api/users/:id/active`
+- `GET /api/audit-log` (System event audit log)
+- `GET /api/notifications`
+
+---
 
 <div align="center">
 
