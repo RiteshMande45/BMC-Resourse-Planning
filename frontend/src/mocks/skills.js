@@ -1,0 +1,23 @@
+export const MOCK_SKILLS = [
+  { id: 'skl-1', name: 'Control-M', category: 'Systems' },
+  { id: 'skl-2', name: 'ITSM', category: 'Support' },
+  { id: 'skl-3', name: 'Python', category: 'Backend' },
+  { id: 'skl-4', name: 'React', category: 'Frontend' },
+  { id: 'skl-5', name: 'PostgreSQL', category: 'Database' },
+  { id: 'skl-6', name: 'AWS', category: 'DevOps' },
+  { id: 'skl-7', name: 'Node.js', category: 'Backend' },
+  { id: 'skl-8', name: 'JavaScript', category: 'Frontend' },
+  { id: 'skl-9', name: 'TypeScript', category: 'Frontend' },
+  { id: 'skl-10', name: 'SQL', category: 'Database' },
+  { id: 'skl-11', name: 'QA Testing', category: 'QA' },
+  { id: 'skl-12', name: 'Manual Testing', category: 'QA' },
+  { id: 'skl-13', name: 'Automation Testing', category: 'QA' },
+  { id: 'skl-14', name: 'AI/ML', category: 'AI/ML' },
+  { id: 'skl-15', name: 'Deep Learning', category: 'AI/ML' },
+  { id: 'skl-16', name: 'Data Analytics', category: 'Analytics' },
+  { id: 'skl-17', name: 'DevOps', category: 'DevOps' },
+  { id: 'skl-18', name: 'Java', category: 'Backend' },
+  { id: 'skl-19', name: 'C++', category: 'Systems' },
+  { id: 'skl-20', name: 'UI/UX Design', category: 'Design' },
+];
+

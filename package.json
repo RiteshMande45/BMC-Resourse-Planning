@@ -1,0 +1,13 @@
+{
+  "name": "resource-planning-elliot-systems",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Elliot Systems Pvt Ltd - Resource Planning Platform",
+  "scripts": {
+    "start": "node -e \"const { spawn } = require('child_process'); spawn('node', ['backend/src/server.js'], { stdio: 'inherit', shell: true }); spawn('npm', ['run', 'dev'], { cwd: 'frontend', stdio: 'inherit', shell: true });\"",
+    "dev:backend": "cd backend && node src/server.js",
+    "dev:frontend": "cd frontend && npm run dev",
+    "test": "cd frontend && npm test"
+  }
+}
+
